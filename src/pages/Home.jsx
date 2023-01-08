@@ -1,10 +1,12 @@
-import { getWeather } from "../api/wether";
-function App() {
-  getWeather().then((res) => {
-    console.log(res);
-  });
+import { Weather } from "../components/Weather";
 
-  return <div>RAWAJ</div>;
+function App() {
+  return (
+    <>
+      <h1>Home</h1>
+      <Weather />
+    </>
+  );
 }
 
 export default App;

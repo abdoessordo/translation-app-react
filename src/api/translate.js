@@ -1,7 +1,7 @@
 import * as AWS from "aws-sdk";
-import creds from "../config.json";
+import data from "../config.json";
 
-const { accessKeyId, secretAccessKey } = creds.translate;
+const { accessKeyId, secretAccessKey } = data.translate;
 
 AWS.config.update({
   region: "us-east-1",

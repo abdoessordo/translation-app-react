@@ -1,10 +1,12 @@
-import creds from "../config.json";
+import data from "../config.json";
 
-const { apiKey, baseURL } = creds.weather;
+const { apiKey, baseURL } = data.weather;
 
 const city = "Doha";
 
-const finalURL = `${baseURL}?q=${city}&appid=${apiKey}`;
+const units = "metric";
+
+const finalURL = `${baseURL}?q=${city}&appid=${apiKey}&units=${units}`;
 
 export async function getWeather() {
   const response = await fetch(finalURL);
