@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getWeather } from "../api/wether";
 
-export function Weather() {
+export default function Weather() {
   const [weather, setWeather] = useState(null);
 
   useEffect(() => {

@@ -8,9 +8,7 @@
     "apiKey": "5e37aea9c69cea8d1b6a0ce2fc9c4187"
   },
   "matches": {
-    "email": "tonaessordo@gmail.com",
-    "password": "qwertyqwerty",
-    "login": "http://api.cup2022.ir/api/v1/user/login",
-    "matches": "http://api.cup2022.ir/api/v1/match"
+    "all": "http://worldcup2022.api.com/api/matches/all",
+    "random": "http://worldcup2022.api.com/api/matches/random"
   }
 }
