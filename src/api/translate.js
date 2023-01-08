@@ -1,5 +1,5 @@
 import * as AWS from "aws-sdk";
-import data from "../config.json";
+import data from "../data.json";
 
 const { accessKeyId, secretAccessKey } = data.translate;
 

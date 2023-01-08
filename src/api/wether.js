@@ -1,4 +1,4 @@
-import data from "../config.json";
+import data from "../data.json";
 
 const { apiKey, baseURL } = data.weather;
 
