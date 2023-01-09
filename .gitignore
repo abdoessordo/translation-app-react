@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 #api keys
-/src/data.json
+/src/utils/data.json
