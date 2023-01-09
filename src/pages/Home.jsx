@@ -6,9 +6,11 @@ function App() {
   return (
     <>
       {/* <h1>Home</h1>
-      <Weather />
       <Match /> */}
-      <Translate />
+      {/* <Translate />  */}
+      <br />
+      <br />
+      <Weather />
     </>
   );
 }

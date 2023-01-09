@@ -1,31 +1,85 @@
+@font-face {
+  font-family: 'Qatar2022';
+  src: url('./fonts/Qatar2022-Bold.otf') format('opentype'),
+    url('./fonts/Qatar2022-Bold.woff') format('woff'),
+    url('./fonts/Qatar2022-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qatar2022';
+  src: url('./fonts/Qatar2022-Heavy.otf') format('opentype'),
+    url('./fonts/Qatar2022-Heavy.woff') format('woff'),
+    url('./fonts/Qatar2022-Heavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qatar2022';
+  src: url('./fonts/Qatar2022-Medium.otf') format('opentype'),
+    url('./fonts/Qatar2022-Medium.woff') format('woff'),
+    url('./fonts/Qatar2022-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qatar2022Arabic';
+  src: url('./fonts/Qatar2022Arabic-Bold.otf') format('opentype'),
+    url('./fonts/Qatar2022Arabic-Bold.woff') format('woff'),
+    url('./fonts/Qatar2022Arabic-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qatar2022Arabic';
+  src: url('./fonts/Qatar2022Arabic-Heavy.otf') format('opentype'),
+    url('./fonts/Qatar2022Arabic-Heavy.woff') format('woff'),
+    url('./fonts/Qatar2022Arabic-Heavy.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Qatar2022Arabic';
+  src: url('./fonts/Qatar2022Arabic-Medium.otf') format('opentype'),
+    url('./fonts/Qatar2022Arabic-Medium.woff') format('woff'),
+    url('./fonts/Qatar2022Arabic-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
 * {
-  font-family: arial, sans-serif;
+  font-family: 'Qatar2022',
+  'Qatar2022Arabic',
+  sans-serif;
 }
 
 body {
   margin: 0;
-  background-color: #eee;
+  background-color: #EEEEE5;
   min-height: 100vh;
 }
 
 #root {
-
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .app {
   display: flex;
   justify-content: center;
   /* align-items: center; */
-
   width: 50rem;
   height: 19rem;
-
-  padding: 1rem;
+  padding: 1rem 0;
   background: #202124;
+  margin-bottom: 1rem;
   /* border-radius: 1rem; */
 }
 
@@ -195,4 +249,88 @@ input {
     left: 265px;
     top: -156px;
   }
+}
+/* ============ Meteo ============ */
+
+
+.meteo {
+  padding: 2rem;
+  padding-bottom: 0;
+  width: 100%;
+  border: 2px solid #8A1538;
+}
+
+.meteo h1 {
+  margin: 0;
+  color: #8A1538;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.meteo .location {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.meteo .meteo-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meteo .meteo-body .img-container {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.meteo .meteo-body img {
+  clip-path: inset(25% 25% 25% 25%);
+  width: 100%;
+  transform: scale(2);
+}
+
+.meteo .meteo-body h1 {
+  font-size: 80px;
+}
+
+.meteo .meteo-body h2 {
+  font-size: 40px;
+  color: #FF4700;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.meteo hr {
+  width: 82%;
+  border: 1px solid #8A1538;
+  margin-bottom: 0;
+}
+
+.meteo .meteo-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.meteo .meteo-footer .subsection {
+  display: flex;
+  gap: 1rem;  
+}
+
+.meteo .meteo-footer> :nth-child(1) h1 {
+  color: #FF004C !important;
+}
+
+.meteo .meteo-footer> :nth-child(2) h1{
+  color: #00CFB7 !important;
+}
+
+.meteo .meteo-footer .subsection h1,
+.meteo .meteo-footer .subsection h2 {
+  margin: 0;
+  text-shadow: unset;
+  color: #8A1538;
 }
