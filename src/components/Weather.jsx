@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getWeather } from "../api/wether";
+import { getWeather } from "../api/wetherAPI";
 
 export default function Weather() {
   const [weather, setWeather] = useState(null);

@@ -1,5 +1,5 @@
 import * as AWS from "aws-sdk";
-import data from "../data.json";
+import data from "../utils/data.json";
 
 const { accessKeyId, secretAccessKey } = data.translate;
 
@@ -20,5 +20,5 @@ export async function translateText(text, source, target) {
   const translatedMessage = await translate
     .translateText(translateParams)
     .promise();
-  console.log(translatedMessage);
+  return translatedMessage.TranslatedText;
 }

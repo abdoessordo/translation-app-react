@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { getRandomMatches } from "../api/matches";
+import { getRandomMatches } from "../api/matchesAPI";
 
 export default function Match({ match }) {
   const [matches, setMatches] = useState([]);

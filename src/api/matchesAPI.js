@@ -1,4 +1,4 @@
-import data from "../data.json";
+import data from "../utils/data.json";
 
 const { all, random } = data.matches;
 
