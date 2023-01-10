@@ -10,7 +10,11 @@ function App() {
       {/* <Translate />  */}
       <br />
       <br />
-      <Weather />
+      <Weather city="Doha" />
+      <Weather city="Tangier" />
+      <Weather city="Casablanca" />
+      <Weather city="Paris" />
+      <Weather city="London" />
     </>
   );
 }

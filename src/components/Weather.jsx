@@ -5,11 +5,11 @@ import humidite from "../assets/humidite.svg";
 import wind from "../assets/wind.svg";
 import feelsLike from "../assets/feelsLike.svg";
 
-export default function Weather() {
+export default function Weather({city}) {
   const [weather, setWeather] = useState(null);
 
   useEffect(() => {
-    getWeather().then((res) => {
+    getWeather(city).then((res) => {
       setWeather(res);
     });
   }, []);
@@ -56,7 +56,9 @@ export default function Weather() {
               <h1>{Math.round(weather.main.temp)}°C</h1>
 
               {/* Description */}
-              <h2>{capitalizeWords(weather.weather[0].description)}</h2>
+              <div className="description">
+                <h2>{capitalizeWords(weather.weather[0].description)}</h2>
+              </div>
             </div>
             
             <hr />
