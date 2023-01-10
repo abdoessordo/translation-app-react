@@ -16,17 +16,14 @@ function App() {
 
   return (
     <>
-      {/* <h1>Home</h1> */}
-      <Match match={matches[0]} />
-      {/* {matches.length > 0 && (
+      {matches.length > 0 &&
         matches.map((match) => {
           return <Match match={match} />;
-        })
-      )} */}
-      {/* <Translate />  */}
+        })}
+      <Translate />
       <br />
       <br />
-      {/* <Weather city="Doha" /> */}
+      <Weather city="Doha" />
     </>
   );
 }
