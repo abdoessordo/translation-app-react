@@ -54,8 +54,8 @@
 
 * {
   font-family: 'Qatar2022',
-  'Qatar2022Arabic',
-  sans-serif;
+    'Qatar2022Arabic',
+    sans-serif;
 }
 
 body {
@@ -250,6 +250,7 @@ input {
     top: -156px;
   }
 }
+
 /* ============ Meteo ============ */
 
 
@@ -332,14 +333,14 @@ input {
 
 .meteo .meteo-footer .subsection {
   display: flex;
-  gap: 1rem;  
+  gap: 1rem;
 }
 
 .meteo .meteo-footer> :nth-child(1) h1 {
   color: #FF004C !important;
 }
 
-.meteo .meteo-footer> :nth-child(2) h1{
+.meteo .meteo-footer> :nth-child(2) h1 {
   color: #00CFB7 !important;
 }
 
@@ -348,4 +349,100 @@ input {
   margin: 0;
   text-shadow: unset;
   color: white;
+}
+
+/* ========= MATCHES ========= */
+.match h1 {
+  color: #8A1538;
+  font-weight: 900;
+}
+
+.match .match-body {
+  border: 2px solid #8A1538;
+  padding: 1rem;
+}
+
+.match .match-body .team {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+.match .match-body .team .crest-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.match span.score {
+  color: #000;
+}
+
+.match .match-body {
+  display: grid;
+  grid-template-columns: 2fr 2px 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.match .match-body .team .crest-container img {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.match .match-body .vertical-sep {
+  width: 2px;
+  height: 80%;
+  background-color: #8A1538;
+}
+
+.match .match-body .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.match .match-body .description h2.match-type {
+  margin: 0;
+}
+
+.match .match-body .vs {
+  text-align: center;
+  color: #8A1538;
+}
+
+.match .match-body .vs h2 {
+  margin: .5rem;
+}
+
+.match .match-body .match-time img.clock {
+  width: 2rem;
+}
+
+.match .match-body .match-time {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.match .match-body .match-time h1 {
+  margin: 0;
+  transform: translateY(0.22rem);
+}
+
+.match .match-stadium {
+  padding: 0.67rem;
+  display: flex;
+  align-items: center;
+  border: 2px solid #8A1538;
+  border-top: none;
+  gap: 1rem;
+}
+
+
+.match .match-stadium h1 {
+  margin: 0;
+  transform: translateY(0.25rem);
 }

@@ -2,8 +2,14 @@ import { useEffect, useState } from "react";
 import { getWeather } from "../api/wetherAPI";
 import pin from "../assets/pin.svg";
 import humidite from "../assets/humidite.svg";
-import wind from "../assets/wind.svg";
 import feelsLike from "../assets/feelsLike.svg";
+
+export function capitalizeWords(str) {
+  return str
+    .split(" ")
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(" ");
+}
 
 export default function Weather({city}) {
   const [weather, setWeather] = useState(null);
@@ -14,12 +20,7 @@ export default function Weather({city}) {
     });
   }, []);
 
-  function capitalizeWords(str) {
-    return str
-      .split(" ")
-      .map((word) => word[0].toUpperCase() + word.slice(1))
-      .join(" ");
-  }
+
 
   return (
     <div>
